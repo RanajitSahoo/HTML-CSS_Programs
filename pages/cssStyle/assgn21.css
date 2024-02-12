@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+}
+header{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header>h1{
+    color: white;
+}
+
+span{
+    color: orange;
+    font-size: 50px;
+    font-family: "comic sans ms",sans_serif;
+    margin-left: 20px;
+}
+header>div>a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 20px;
+    background-color: orange;
+    border-radius: 10px;
+}
+header>div>a:hover{
+    box-shadow: 0px 0px 20px white;
+}
+section{
+    background: yellow url("../../assets/group.webp")  no-repeat 0px 0px fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+   flex-direction: column;
+   padding: 20px;
+}
+section>h1{
+    font-size: 50px;
+}
+section>div>button{
+    background-color: orange;
+    padding: 10px;
+    border: none;
+}
+section>div{
+    padding: 20px;
+}
+@media (min-width:0px) and (max-width:750px) {
+    header{
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+        height: 180px;
+        gap: 10px;
+    }
+    
+}

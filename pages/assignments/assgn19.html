@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>CSS Screen Size</title>
+    <style>
+        div>h1{
+            display: none;
+            text-align: center;
+        }
+        div>img{
+            display: none;
+            margin: auto;
+        }
+        @media(min-width:0px) and (max-width:500px){
+            body{
+                background-color: aqua;
+            }
+            div>h1:nth-child(5){
+                display: block;
+            }
+            div>img:nth-child(5){
+                display: block;
+                
+            }
+        }
+        @media (min-width:501px) and (max-width:700px) {
+            body{
+                background-color: blueviolet;
+            }
+            div>h1:nth-child(4){
+                display: block;
+                color: bisque;
+            }
+            div>img:nth-child(4){
+                display: block;
+            }
+        }
+        @media (min-width:701px) and (max-width:999px){
+            body{
+                background-color: orange;
+            }
+            div>h1:nth-child(3){
+                display: block;
+                color: rgb(31, 84, 206);
+            }
+            div>img:nth-child(3){
+                display: block;
+            }
+        }
+        @media (min-width:1000px) and (max-width:1280px){
+            body{
+                background-color: rgb(251, 0, 255);
+            }
+            div>h1:nth-child(2){
+                display: block;
+                color: rgb(197, 206, 31);
+            }
+            div>img:nth-child(2){
+                display: block;
+            }
+        }
+        @media (min-width:1281px){
+            body{
+                background-color: rgb(208, 255, 0);
+            }
+            div>h1:nth-child(1){
+                display: block;
+                color: rgb(94, 98, 15);
+            }
+            div>img:nth-child(1){
+                display: block;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div >
+        <h1>XXL-Screen</h1>
+        <h1>XL-Screen</h1>
+        <h1>L-Screen</h1>
+        <h1>M-Screen</h1>
+        <h1>S-Screen</h1>
+       
+    </div>
+   <div >
+    <img src="../../assets/tv.jpeg" alt="">
+    <img src="../../assets/Monitor.jpeg" alt="">
+    <img src="../../assets/laptop.jpeg" alt="">
+    <img src="../../assets/tab.jpeg" alt="">
+    <img src="../../assets/mobile.jpeg" alt="">
+   </div>
+</body>
+</html>

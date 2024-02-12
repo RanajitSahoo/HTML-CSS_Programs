@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../MDB-Free_4.20.0/css/bootstrap.css">
+    <link rel="stylesheet" href="../../../MDB-Free_4.20.0/css/mdb.css">
+   
+    <link rel="stylesheet" href="../../../fontawesome/css/all.css">
+</head>
+<body>
+    <div class="container mt-2">
+        <div class="card bg-secondary col-md-12 ">
+            <div class="card-header h1-responsive h-75 text-white">Add to Cart</div>
+            <div class="card-body text-white  ">
+                
+                <div class="d-flex row align-content-center justify-content-between">
+                    <div><i class="fa fa-minus-square display-4 p-3" id="minus"></i>
+                        <img src="../../assets/res_25a80a3ee5c2a25130966857b63f7d5c.avif" alt="not found!" class="card-img-100 p-1">
+                        <i class="fa fa-plus-square display-4 p-3" id="plus"></i>
+                    </div>
+                    <div>
+                       <h1 id="h1"></h1>
+                    </div>
+                </div>
+                <div class="d-flex row align-content-center justify-content-between">
+                    <div><i class="fa fa-minus-square display-4 p-3" id="minus2"></i>
+                        <img src="../../assets/res_25a80a3ee5c2a25130966857b63f7d5c.avif" alt="not found!" class="card-img-100 p-1">
+                        <i class="fa fa-plus-square display-4 p-3" id="plus2"></i>
+                    </div>
+                    <div>
+                        <h1 id="h2"></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-white d-flex row align-content-center justify-content-between">
+                <h1>Total quantity</h1>
+                <h1 id="total"></h1>
+            </div>  
+            
+        </div>
+    </div>
+    <script>
+        let  minus=document.getElementById('minus');
+        let  plus=document.getElementById('plus');
+        let  h1=document.getElementById('h1');
+        let  minus2=document.getElementById('minus2');
+        let  plus2=document.getElementById('plus2');
+        let  h2=document.getElementById('h2');
+        let  total=document.getElementById('total');
+        var count1=0
+        var count2=0
+        let sum=0
+        
+        function total1(){
+            
+            total.innerText=Number(h1.innerText)+Number(h2.innerText);
+        }
+        function total2(){
+            
+            total.innerText=Number(h1.innerText)+Number(h2.innerText);
+        }
+        
+        minus.addEventListener('click',(event)=>{
+            if(Number(h1.innerText)<=0){
+                count1=0
+            }
+            else{
+                count1--
+            h1.innerText=count1
+            
+            total2()
+            }
+        })
+        minus2.addEventListener('click',(event)=>{
+            if(Number(h2.innerText)<=0){
+                count2=0
+            }else{
+                count2--
+            h2.innerText=count2
+            total2()
+            }
+            
+        })
+        plus.addEventListener('click',(event)=>{
+            if(Number(h1.innerText)>=0){
+                count1++
+            }
+            h1.innerText=count1
+            
+            total1()
+        })
+        plus2.addEventListener('click',(event)=>{
+            if(Number(h2.innerText)>=0){
+                count2++
+            }
+            
+            h2.innerText=count2
+            total1(count2)
+        })
+        
+
+    </script>
+    <script src="../../../MDB-Free_4.20.0/js/jquery.js"></script>
+    <script src="../../../MDB-Free_4.20.0/js/popper.js"></script>
+    <script src="../../../MDB-Free_4.20.0/js/bootstrap.js"></script>
+    <script src="../../../MDB-Free_4.20.0/js/mdb.js"></script>
+</body>
+</html>

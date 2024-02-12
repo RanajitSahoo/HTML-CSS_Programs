@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        div{
+            
+            position: relative;
+            top: 200px;
+            left:400px;
+            width: fit-content;
+            
+            
+        }
+        #one{
+            position: relative;
+            color: lawngreen;
+            text-shadow: 0px 0px 10px aquamarine;
+           
+        }
+        div>span{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            /* background-color: green; */
+            animation: volume 1.2s linear 0s infinite normal ;
+        }
+        @keyframes volume {
+            0%,100%{
+                height: 20px;
+                background-color: yellow;
+               
+                
+            }
+            10%{
+                height: 40px;
+                background-color: yellow;
+            }
+            20%{
+                background-color: rgb(50, 205, 58);
+                height: 60px;
+               
+            }
+            30%{
+                background-color: rgb(50, 205, 58);
+                height: 80px;
+               
+            }
+            40%{
+                background-color: rgb(50, 151, 205);
+                height: 100px;
+               
+            }
+            50%{
+                background-color: rgb(50, 151, 205);
+                height: 120px;
+               
+            }
+            60%{
+                background-color: rgb(50, 151, 205);
+                height: 140px;
+               
+            }
+            70%{
+                background-color: rgb(255, 0, 8);
+                height: 160px;
+               
+            }
+            80%{
+                background-color: rgb(255, 0, 8);
+                height: 180px;
+               
+            }
+            90%{
+                background-color: rgb(255, 0, 8);
+                height: 200px;
+               
+            }
+          
+        }
+        div>span:first-child{
+            background-color: rgb(255, 119, 0);
+           
+            animation-delay: 0.8s;
+        }
+        div>span:nth-child(2){
+            background-color: rgb(255, 230, 0);
+            animation-delay: 0.2s; 
+        }
+        div>span:nth-child(3){
+            background-color: rgb(187, 255, 0);
+            animation-delay: 0.7s; 
+        }
+        div>span:nth-child(4){
+            background-color: rgb(43, 255, 0);
+            animation-delay: 0.4s; 
+        }
+        div>span:nth-child(5){
+            background-color: rgb(11, 157, 38);
+            animation-delay: 0.1s; 
+        }
+        div>span:nth-child(6){
+            background-color: rgb(0, 255, 183);
+            animation-delay: 0.6s; 
+        }
+        div>span:nth-child(7){
+            background-color: rgb(0, 247, 255);
+            animation-delay: 0.2s; 
+        }
+        div>span:nth-child(8){
+            background-color: rgb(0, 170, 255);
+            animation-delay: 0.8s; 
+        }
+        div>span:nth-child(9){
+            background-color: rgb(0, 34, 255);
+            animation-delay: 0.3s; 
+        }
+        div>span:nth-child(10){
+            background-color: rgb(140, 0, 255);
+            animation-delay: 0.6s; 
+        }
+        div>span:nth-child(11){
+            background-color: rgb(255, 0, 251);
+            animation-delay: 0.1s; 
+        }
+        div>span:last-child{
+            background-color: rgb(255, 0, 123);
+            animation-delay: 0.9s;
+        }
+    </style>
+</head>
+<body>
+    <div id="one">
+        <h1>Music Player</h1>
+    </div>
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+       
+    </div>
+</body>
+</html>

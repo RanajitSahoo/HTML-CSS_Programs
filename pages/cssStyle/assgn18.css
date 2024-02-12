@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+}
+header{
+    background: linear-gradient(45deg,darkslategrey,violet);
+    
+}
+header>h1{
+    color: white;
+    margin-left: 30px;
+    padding: 20px;
+}
+nav{
+    background: linear-gradient(45deg,violet,darkslategrey);
+    text-align: center;
+    padding: 10px;
+}
+nav>a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+aside{
+    background: linear-gradient(135deg,violet,darkslategrey); 
+    width: 200px;
+    text-align: center;
+    float: left;
+}
+aside>a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+aside>a:hover{
+    text-shadow: 0px 0px 10px white;
+}
+section{
+    background: linear-gradient(45deg,darkslategrey,violet);
+    margin-left: 200px;
+    padding: 14px;
+}
+section>article{
+    background: linear-gradient(45deg,violet,aqua);
+    padding: 14px;
+    margin-top: 9px;
+    border:2px solid white ;
+}
+footer{
+    background: linear-gradient(45deg,darkslategrey,violet); 
+    text-align: center;
+}
+footer>h3{
+    color: white;
+}
+

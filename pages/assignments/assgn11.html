@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: blanchedalmond;
+            padding: 20px;
+            margin: auto;
+            border: 2px solid Blue;
+            transition: all 1s linear 0s;
+            position: relative;
+            overflow: hidden;
+            
+        }
+        div>img{
+            width: inherit;
+            height: inherit;
+            /* transition: all 2s linear 0s; */
+        }
+        div>#one{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: rgba(246, 246, 248, 0.4);
+            transform: translateX(-100%);
+            transition: all 1s linear 0s;
+        }
+        div:hover{
+            width:400px;
+            height: 400px;
+            padding: 50px;
+            background-color: cyan;
+            
+        }
+        /* div:hover>img{
+            width:800px;
+            height: 800px;
+            padding: 50px;
+        } */
+        div:hover>#one{
+            transform: translateX(0%);
+        }
+        #one h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+       <img src="../../assets/r15.webp" alt="">
+       <div id="one">
+                <h1>R15 my Bike</h1>
+       </div>
+    </div>
+</body>
+</html>

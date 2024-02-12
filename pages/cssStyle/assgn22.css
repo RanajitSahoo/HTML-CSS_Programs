@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+}
+header{
+    border: 2px solid black;
+    display: flex;
+    height: 150px;
+   
+    align-items: flex-start;
+    justify-content: space-evenly;
+    
+}
+
+header>img{
+    padding: 10px;
+   height: 100px;
+   width: 100px;
+    border: 2px solid black;
+}

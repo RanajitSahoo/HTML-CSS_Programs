@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+     body{
+        background-color: antiquewhite;
+     }
+      #x{
+        margin-bottom: 80px;
+      }
+      #o{
+        height: 35px;
+        width: 70px;
+        margin-right: 20px;
+        border-radius: 25px;
+        color: white;
+        border-color: blue;
+        background-color: blue;
+      }
+      #e{
+        height: 35px;
+        width: 70px;
+        margin-right: 20px;
+        border-radius: 25px;
+        color: black;
+        border-top-color: grey;
+        border-left-color: grey ;
+        border-bottom-color: black ;
+        border-right-color: black ;
+        background-color: grey;
+      }
+      #n{
+        height: 35px;
+        width: 70px;
+        margin-right: 20px;
+        border-radius: 25px;
+        color: blue;
+        border-color: blue;
+        
+      }
+      #last{
+        margin-top: 20px;
+        margin-left: 300px;
+      }
+     
+       
+    </style>
+</head>
+<body >
+   <h1 align="center">Assignment 7</h1>
+   <hr>
+    <form action="">
+        <table  align="center" cellspacing="0px" border="1px" CELLPADDING="10PX">
+            <tr id="one">
+                <td><label > <b>Name:</b></label></td>
+                <td><input type="text" width="300px" placeholder="Enter your Name"></td>
+            </tr>
+            <tr  id="one">
+                <td><label > <b>Email:</b></label></td>
+                <td>
+                    
+                    <input type="email" size="60"placeholder="Enter your Email" >
+               
+                </td>
+            </tr>
+            <tr id="one">
+                <td><label ><b>Password:</b></label></td>
+                <td><input type="password" placeholder="Enter your Password"></td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Approval Required:</b>
+                    <p>Click on the button or text to <br>check/uncheck</p>
+                </td>
+                <td><input type="checkbox" id="x" >Do you approve?</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Pick Your Favorite:</b>
+                    <p>Click on the button or text to<br> select</p>
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><input type="radio" name="r1">Choice A
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" name="r1">Choice B
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                   <input type="radio" name="r1">Choice C
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Popup Menu:</b>
+                    
+                </td>
+                <td><div>
+                    <select  >
+                        <option >Texas -- TX</option>
+                        <option >California -- CA</option>
+                        <option >Colorado -- CO</option>
+                        <option >Connecticut -- CN</option>
+                        <option >Dalifornia -- DA</option>
+                        <option >Dolorado -- DO</option>
+                    </select>
+                </div></td>
+            </tr>
+            <tr>
+                <td><b>List</b><br>
+                    Setup Option:
+                    
+                    <ul>
+                        
+                        <li>Number of rows to be display</li>
+                        <li>Allow Multi-select</li>
+                    </ul>
+                </td>
+                <td>
+                    <div>
+                        <select multiple  >
+                            
+                            <option >California -- CA</option>
+                            <option >Colorado -- CO</option>
+                            <option >Connecticut -- CN</option>
+                            <option >Dalifornia -- DA</option>
+                            <option >Dolorado -- DO</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Field ignored by KM</b></td>
+                <td><input type="text" placeholder="10,357"></td>
+            </tr>
+            <tr>
+                <td><b>Text Area</b></td>
+                <td><textarea name="" id="" cols="50" rows="4">any thing </textarea></td>
+            </tr>
+           
+        </table>
+        <div id="last">
+            <button id="o">save</button>
+        <button id="n">cancel</button>
+        <button id="e">Resize</button>
+        </div>
+    </form>
+</body>
+</html>

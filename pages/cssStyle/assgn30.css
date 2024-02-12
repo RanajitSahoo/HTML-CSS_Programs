@@ -1,0 +1,36 @@
+.bg-primary{
+    background: linear-gradient(65deg,orange,black);
+}
+.bg-success{
+    background: linear-gradient(45deg,darkslategrey,green);
+}
+.bg-warning{
+    background: linear-gradient(45deg,darkslategrey,orange);
+}
+.bg-danger{
+    background: linear-gradient(45deg,darkslategrey,red);
+}
+#landing{
+    height: 100vh!important;
+    background: black url(../../assets/group.webp) no-repeat 0px 0px scroll;
+    background-size: cover;
+   }
+   #landing>.wrapper{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: inherit;
+   }
+   button{
+    background-color: orange;
+    border: none;
+   }
+   span{
+    color: Orange;
+    font-family:"comic sans ms",sans_serif;
+   }
+@media (min-width:0px) and (max-width:768px){
+    
+    .bg-primary{
+        background: linear-gradient(185deg,orange,black);
+    
+    }
+}

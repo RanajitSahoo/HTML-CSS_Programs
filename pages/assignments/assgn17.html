@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        div>h1{
+            position: relative;
+            width: 400px;
+            color: rgb(186, 156, 119);
+            display: inline-block;
+            animation: movetext 1s ease-in-out 1s forwards normal ;
+        }
+        div>img{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            animation: moveimg 1s ease-in 0s forwards normal ;
+            border-radius: 100%;
+        }
+        div:hover{
+            color: aqua;
+
+        }
+
+        @keyframes moveimg {
+            0%{
+                top:0px;
+                left: 0px;
+            }
+            50%{
+                top: 0px;
+                left:300px;
+            }
+            75%{
+                top:350px;
+                left:300px
+            }
+            100%{
+                top: 350px;
+                left: 50px;
+            }
+        }
+
+        @keyframes movetext {
+            0%{
+                top:0px;
+                left: 0px;
+            }
+            25%{
+                top: 0px;
+                left:100px;
+            }
+            50%{
+                top:0px;
+                left:150px;
+            }
+            75%{
+                top:0px;
+                left:175px;
+            }
+            100%{
+                top:0px;
+                left:400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Happy Birthday Zendaya</h1>
+    <img src="../../assets/Zenda.jpeg" alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        div{
+            background-color: blueviolet;
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            box-shadow: 0 0 10px Black;
+            position: relative;
+           overflow: hidden;
+           transition: all 1s linear 0s;
+        }
+        div>img{
+            transition: all 1s linear 0s;
+        }
+        div>#one{
+            color:white;
+            width: inherit;
+            height: 100px;
+            position: absolute;
+            top:300px;
+            margin: 0px;
+        }
+        div:hover>img{
+            transform: translateY(-80px);
+        }
+        div:hover>#one{
+            transform: translateY(-80px);
+        }
+        ol{
+          list-style-type: none;  
+        }
+        ol>li{
+            border: 1px solid white;
+            text-align: center;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../../assets/res_25a80a3ee5c2a25130966857b63f7d5c.avif" alt="">
+        <div id="one">
+            <ol>
+                <li>price: 3000.00</li>
+                <li>brand: Puma</li>
+                <li>color: Black</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

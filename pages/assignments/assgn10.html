@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Ranajit R15</title>
+   <style>
+    div{
+        background-color: rgb(193, 193, 193);
+        width:400px;
+        height: 250px;
+        margin:100px auto;
+        border: 2px solid Blue;
+        position: relative;
+        overflow: hidden; 
+    }
+    div>img{
+        width: inherit;
+        height: inherit;
+    }
+    div:hover{
+        cursor: pointer;
+    }
+    div>#wrapper{
+        position:absolute;
+        margin: 0px;
+        top:0px;
+        bottom:0px;
+        background-color: rgba(246, 246, 248, 0.4);
+        transform:translateX(-100%); 
+        transition: all 1s linear 0s;
+    }
+    div:hover>#wrapper{
+        transform:translateX(0%);
+    }
+    #wrapper h1{
+        text-align: center;
+        color: blue;
+    }
+    
+   </style>
+</head>
+<body>
+    <div> 
+        <img src="../../assets/r15.webp">
+        <div id="wrapper">
+            <h1>R15 Bike</h1>
+            
+        </div>
+    </div>
+</body>
+</html>
